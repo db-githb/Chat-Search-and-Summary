@@ -1,12 +1,6 @@
 
 <h1> <p style="text-align:center;"> Chat Search-and-Summary <p> </h1>
-<img src="chat-search-and-summary.png" 
-        alt="Picture" 
-        width="380" 
-        height="401" 
-        style="display: block; margin: 0 auto" />
 
-## Overview
 Chat-GPT clone using LangGraph to implement a Retrieval Augmented Generation (RAG) agent, equipped with web search and document summary tools, wrapped in a Streamlit GUI.
 
 Tools available to RAG Agent:
@@ -30,3 +24,8 @@ pip install -r requirements.txt
 ## Run
 ```\path\to\project> streamlit run main.py```
 
+<img src="chat-search-and-summary.png" 
+        alt="Picture" 
+        width="380" 
+        height="401" 
+        style="display: block; margin: 0 auto" />
