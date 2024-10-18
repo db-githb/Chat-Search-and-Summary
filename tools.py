@@ -1,4 +1,5 @@
 import os
+import toml
 from langchain.schema import Document
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_ollama import ChatOllama, OllamaEmbeddings
@@ -12,7 +13,8 @@ from langchain_core.prompts import ChatPromptTemplate
 
 class Tools:
     def __init__(self):
-        os.environ["TAVILY_API_KEY"] = "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"
+        secrets = toml.load("./secrets.toml")
+        os.environ["TAVILY_API_KEY"] = secrets["TAVILY_API_KEY"]
         self.web_search_tool = TavilySearchResults()
         self.model = "llama3.1"
         self.embeddings = OllamaEmbeddings(model=self.model,)

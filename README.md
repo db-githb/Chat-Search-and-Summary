@@ -21,6 +21,15 @@ py -m venv \path\to\venv
 pip install -r requirements.txt
 ```
 
+## API Keys
+
+Chat Search-and-Summary's RAG agent uses Tavily to search the web.  As a result it is necessary to enter a Tavily API key.  To do this:
+
+(1) Create a secrets.toml in the project directory (should be same level as main.py)
+
+(2) In secrets.toml, write TAVILY_API_KEY = "your-key" and save file.
+
+
 ## Run
 ```\path\to\project> streamlit run main.py```
 
