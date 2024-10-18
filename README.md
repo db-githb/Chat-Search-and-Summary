@@ -25,9 +25,11 @@ pip install -r requirements.txt
 
 Chat Search-and-Summary's RAG agent uses Tavily to search the web.  As a result it is necessary to enter a Tavily API key.  To do this:
 
-(1) Create a secrets.toml in the project directory (should be same level as main.py)
+(1) Sign up for a [Tavily](https://docs.tavily.com/docs/welcome#getting-started) account and obtain a key (it's free)
 
-(2) In secrets.toml, write TAVILY_API_KEY = "your-key" and save file.
+(2) Create a secrets.toml in the project directory (should be same level as main.py)
+
+(3) In secrets.toml, write TAVILY_API_KEY = "your-key" and save file.
 
 
 ## Run
