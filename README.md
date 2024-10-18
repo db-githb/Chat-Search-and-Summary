@@ -24,6 +24,12 @@ pip install -r requirements.txt
 ## Run
 ```\path\to\project> streamlit run main.py```
 
+## Notes to self
+- Chat history tool is currently another llm that is queried by the RAG agent with vector embeddings of the chat history as context  
+(1) Creating vector embeddings with every query is very slow\
+(2) This llm should at least be another agent and not a tool
+    - or figure out how to have chat history persist outside of streamlit
+
 <img src="chat-search-and-summary.png" 
         alt="Picture" 
         width="380" 
